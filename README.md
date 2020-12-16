@@ -5,5 +5,5 @@
 
 ---
 * <a href = "https://mdis.kostat.go.kr/index.do"> 자료출처 : `MDIS` </a>
-* <a href = "https://github.com/KimJiSeong1994/MDIS_Populationflow_region_Preprocessing/tree/main/Preprocessing"> 전처리 코드 : `git-hub` </a>
+* <a href = "https://github.com/KimJiSeong1994/MDIS_Populationflow_region_Preprocessing/blob/main/Preprocessing/MDIS-regioncode%20Preprocessing.R"> 전처리 코드 : `git-hub` </a>
 * <a href = "https://github.com/KimJiSeong1994/MDIS_Populationflow_region_Preprocessing/tree/main/Result"> 결과 파일 : `git-hub` </a>
