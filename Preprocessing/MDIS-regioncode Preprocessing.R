@@ -1,7 +1,7 @@
 # ======================================================== [ MDIS region Code ] ======================================================
 download_path = ""
 writefile_path = ""
-year = ""
+year = NULL # 기준년도 
 
 ## + [ Preprocessing function ] ==========================
 region_parse = function(file_path) {
