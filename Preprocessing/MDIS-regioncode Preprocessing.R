@@ -1,6 +1,7 @@
 # ======================================================== [ MDIS region Code ] ======================================================
 download_path = ""
 writefile_path = ""
+year = ""
 
 ## + [ Preprocessing function ] ==========================
 region_parse = function(file_path) {
@@ -47,11 +48,11 @@ region_parse = function(file_path) {
 }
 
 
-i = 1
+i = 0
 region_code = data.frame(NULL)
 for(file in list.files(download_path)) {
   region_parse(paste0(download_path, "/", file)) %>% 
-    mutate(year = 2000 + i) %>%
+    mutate(year = year + i) %>%
     rbind(region_code, .) -> region_code
   i = i + 1
 }
