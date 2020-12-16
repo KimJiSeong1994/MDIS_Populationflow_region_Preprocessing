@@ -1,6 +1,8 @@
 # ======================================================== [ MDIS region Code ] ======================================================
 download_path = ""
+writefile_path = ""
 
+## + [ Preprocessing function ] ==========================
 region_parse = function(file_path) {
   if(!require(tidyverse)) install.packages("tidyverse")
   
@@ -44,9 +46,9 @@ region_parse = function(file_path) {
   return(region_code)
 }
 
+
 i = 1
 region_code = data.frame(NULL)
-
 for(file in list.files(download_path)) {
   region_parse(paste0(download_path, "/", file)) %>% 
     mutate(year = 2000 + i) %>%
